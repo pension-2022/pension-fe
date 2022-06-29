@@ -31,11 +31,6 @@ const PostActionDropdown: FC<PostActionDropdownProps> = ({
       icon: "las la-comment-dots",
     },
     {
-      id: "hideThisAuthor",
-      name: "Hide this author",
-      icon: "las la-user-slash",
-    },
-    {
       id: "reportThisArticle",
       name: "Report this article",
       icon: "las la-flag",

@@ -3,8 +3,8 @@ import React from "react";
 export const LogoDpbri = () => {
   return (
     <svg
-      width="190"
-      height="60"
+      width="166"
+      height="48"
       viewBox="0 0 400 116"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,8 +19,8 @@ export const LogoDpbri = () => {
 export const LogoDPensiOn = () => {
   return (
     <svg
-      width="190"
-      height="60"
+      width="166"
+      height="48"
       viewBox="0 0 362 110"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

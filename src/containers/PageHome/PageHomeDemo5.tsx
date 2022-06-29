@@ -4,17 +4,17 @@ import SectionSliderPosts from "./SectionSliderPosts";
 import SectionVideos from "./SectionVideos";
 import { Helmet } from "react-helmet";
 import BackgroundSection from "components/BackgroundSection/BackgroundSection";
-import SectionSubscribe2 from "components/SectionSubscribe2/SectionSubscribe2";
-import SectionGridAuthorBox from "components/SectionGridAuthorBox/SectionGridAuthorBox";
+// import SectionSubscribe2 from "components/SectionSubscribe2/SectionSubscribe2";
+// import SectionGridAuthorBox from "components/SectionGridAuthorBox/SectionGridAuthorBox";
 import { DEMO_POSTS, DEMO_POSTS_GALLERY, DEMO_POSTS_VIDEO } from "data/posts";
 import { DEMO_CATEGORIES } from "data/taxonomies";
-import { DEMO_AUTHORS } from "data/authors";
-import SectionBecomeAnAuthor from "components/SectionBecomeAnAuthor/SectionBecomeAnAuthor";
+// import { DEMO_AUTHORS } from "data/authors";
+// import SectionBecomeAnAuthor from "components/SectionBecomeAnAuthor/SectionBecomeAnAuthor";
 import SectionSliderNewCategories from "components/SectionSliderNewCategories/SectionSliderNewCategories";
-import SectionMagazine4 from "./SectionMagazine4";
-import SectionAds from "./SectionAds";
-import SectionGridPosts from "./SectionGridPosts";
-import SectionMagazine7 from "./SectionMagazine7";
+// import SectionMagazine4 from "./SectionMagazine4";
+// import SectionAds from "./SectionAds";
+// import SectionGridPosts from "./SectionGridPosts";
+// import SectionMagazine7 from "./SectionMagazine7";
 import BgGlassmorphism from "components/BgGlassmorphism/BgGlassmorphism";
 import SectionHero3 from "./SectionHero3";
 import SectionMagazine2 from "./SectionMagazine2";
@@ -26,22 +26,22 @@ const MAGAZINE2_POSTS = DEMO_POSTS.filter((_, i) => i >= 0 && i < 7);
 //
 
 const PageHomeDemo5: React.FC = () => {
-  useEffect(() => {
-    const $body = document.querySelector("body");
-    if ($body) {
-      $body.className = "theme-demo-5 theme-teal-blueGrey";
-    }
-    return () => {
-      if ($body) {
-        $body.className = "";
-      }
-    };
-  }, []);
+  // useEffect(() => {
+  //   const $body = document.querySelector("body");
+  //   if ($body) {
+  //     $body.className = "theme-demo-5";
+  //   }
+  //   return () => {
+  //     if ($body) {
+  //       $body.className = "";
+  //     }
+  //   };
+  // }, []);
 
   return (
     <div className="nc-PageHomeDemo5 relative">
       <Helmet>
-        <title>Home || Blog Magazine React Template</title>
+        <title>dPensiOn || Home</title>
       </Helmet>
 
       {/* ======== ALL SECTIONS ======== */}
@@ -73,17 +73,17 @@ const PageHomeDemo5: React.FC = () => {
           />
 
           {/* === SECTION 3 === */}
-          <SectionAds />
+          {/* <SectionAds /> */}
 
           {/* === SECTION 7 === */}
-          <SectionMagazine7
+          {/* <SectionMagazine7
             className="py-16 lg:py-28"
             posts={DEMO_POSTS_GALLERY.filter((_, i) => i < 6)}
-          />
+          /> */}
         </div>
 
         {/* === SECTION 11 === */}
-        <div className="dark bg-neutral-900 dark:bg-black dark:bg-opacity-20 text-neutral-100">
+        {/* <div className="dark bg-neutral-900 dark:bg-black dark:bg-opacity-20 text-neutral-100">
           <div className="relative container">
             <SectionGridPosts
               className="py-16 lg:py-28"
@@ -95,28 +95,28 @@ const PageHomeDemo5: React.FC = () => {
               gridClass="md:grid-cols-2 lg:grid-cols-3"
             />
           </div>
-        </div>
+        </div> */}
 
         <div className="container ">
           {/* === SECTION 5 === */}
-          <SectionGridAuthorBox
+          {/* <SectionGridAuthorBox
             className="py-16 lg:py-28"
             authors={DEMO_AUTHORS.filter((_, i) => i < 10)}
-          />
+          /> */}
 
           {/* === SECTION 8 === */}
-          <div className="relative py-16">
+          {/* <div className="relative py-16">
             <BackgroundSection />
             <SectionBecomeAnAuthor />
-          </div>
+          </div> */}
 
           {/* === SECTION 11 === */}
-          <SectionMagazine4
+          {/* <SectionMagazine4
             className="py-16 lg:py-28"
             heading="Life styles 🎨 "
             posts={MAGAZINE2_POSTS}
             tabs={MAGAZINE1_TABS}
-          />
+          /> */}
 
           {/* === SECTION 12 === */}
           <div className="relative py-16">
@@ -134,19 +134,19 @@ const PageHomeDemo5: React.FC = () => {
           </div>
 
           {/* === SECTION 14 === */}
-          <SectionSubscribe2 className="pt-16 lg:pt-28" />
+          {/* <SectionSubscribe2 className="pt-16 lg:pt-28" /> */}
 
           {/* === SECTION 15 === */}
-          <SectionVideos className="py-16 lg:py-28" />
+          {/* <SectionVideos className="py-16 lg:py-28" /> */}
 
           {/* === SECTION 17 === */}
-          <SectionLatestPosts
+          {/* <SectionLatestPosts
             className="pb-16 lg:pb-28"
             posts={DEMO_POSTS.filter((_, i) => i > 8 && i < 16)}
             widgetPosts={DEMO_POSTS.filter((_, i) => i > 2 && i < 7)}
             categories={DEMO_CATEGORIES.filter((_, i) => i > 2 && i < 8)}
             tags={DEMO_CATEGORIES}
-          />
+          /> */}
         </div>
         {/* ======= END CONTAINER ============= */}
       </div>

@@ -21,12 +21,11 @@ const PostMeta2: FC<PostMeta2Props> = ({
   const { date, author, categories, readingTime } = meta;
   return (
     <div
-      className={`nc-PostMeta2 flex items-center flex-wrap text-neutral-700 text-left dark:text-neutral-200 ${
-        size === "normal" ? "text-xs" : "text-sm"
-      } ${className}`}
+      className={`nc-PostMeta2 flex items-center flex-wrap text-neutral-700 text-left dark:text-neutral-200 ${size === "normal" ? "text-xs" : "text-sm"
+        } ${className}`}
       data-nc-id="PostMeta2"
     >
-      <Link to={author.href} className="flex items-center space-x-2">
+      {/* <Link to={author.href} className="flex items-center space-x-2">
         <Avatar
           radius={avatarRounded}
           sizeClass={
@@ -37,7 +36,7 @@ const PostMeta2: FC<PostMeta2Props> = ({
           imgUrl={author.avatar}
           userName={author.displayName}
         />
-      </Link>
+      </Link> */}
       <div className="ml-3">
         <div className="flex items-center">
           <Link to={author.href} className="block font-semibold">

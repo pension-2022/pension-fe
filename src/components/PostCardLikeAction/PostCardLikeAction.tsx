@@ -16,15 +16,14 @@ const PostCardLikeAction: FC<PostCardLikeActionProps> = ({
   postId,
   likeCount,
   isLiked,
-  onClickLike = () => {},
+  onClickLike = () => { },
 }) => {
   return (
     <button
-      className={`nc-PostCardLikeAction relative min-w-[68px] flex items-center rounded-full leading-none group transition-colors ${className} ${twFocusClass()} ${
-        isLiked
-          ? "text-rose-600 bg-rose-50 dark:bg-rose-100"
-          : "text-neutral-700 bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-800 hover:bg-rose-50 dark:hover:bg-rose-100 hover:text-rose-600 dark:hover:text-rose-500"
-      }`}
+      className={`nc-PostCardLikeAction relative min-w-[68px] flex items-center rounded-full leading-none group transition-colors ${className} ${twFocusClass()} ${isLiked
+        ? "text-rose-600 bg-primary-6000 dark:bg-primary-6000"
+        : "text-neutral-700 bg-neutral-50 dark:text-neutral-200 dark:bg-neutral-800 hover:bg-rose-50 dark:hover:bg-rose-100 hover:text-rose-600 dark:hover:text-rose-500"
+        }`}
       onClick={() => onClickLike(postId)}
       title="Liked"
       data-nc-id="PostCardLikeAction"
@@ -47,9 +46,8 @@ const PostCardLikeAction: FC<PostCardLikeActionProps> = ({
       </svg>
 
       <span
-        className={`ml-1 ${
-          isLiked ? "text-rose-600" : "text-neutral-900 dark:text-neutral-200"
-        }`}
+        className={`ml-1 ${isLiked ? "text-neutral-200" : "text-neutral-900 dark:text-neutral-200"
+          }`}
       >
         {convertNumbThousand(likeCount)}
       </span>

@@ -36,7 +36,7 @@ const SingleMetaAction2: FC<SingleMetaAction2Props> = ({
           containerClassName="h-9 w-9 bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200"
           iconClass="h-5 w-5"
         />
-        <NcDropDown
+        {/* <NcDropDown
           className="flex-shrink-0 flex items-center justify-center focus:outline-none h-9 w-9 bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700 text-neutral-700 dark:text-neutral-200 rounded-full"
           renderTrigger={() => (
             <svg
@@ -56,7 +56,7 @@ const SingleMetaAction2: FC<SingleMetaAction2Props> = ({
           )}
           onClick={() => {}}
           data={SOCIALS_DATA}
-        />
+        /> */}
         <PostActionDropdown
           containerClassName="h-9 w-9 bg-neutral-100 hover:bg-neutral-200 dark:bg-neutral-800 dark:hover:bg-neutral-700"
           iconClass="h-5 w-5"

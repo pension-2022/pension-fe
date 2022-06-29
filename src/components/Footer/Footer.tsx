@@ -2,7 +2,7 @@ import Logo from "components/Logo/Logo";
 import { LogoDPensiOn } from "components/Logo/LogoSvg";
 import SocialsList1 from "components/SocialsList1/SocialsList1";
 import { CustomLink } from "data/types";
-import React from "react";
+import React, { useEffect } from "react";
 
 export interface WidgetFooterMenu {
   id: string;

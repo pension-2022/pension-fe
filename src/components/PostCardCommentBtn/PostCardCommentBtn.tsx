@@ -17,7 +17,7 @@ const PostCardCommentBtn: FC<PostCardCommentBtnProps> = ({
   return (
     <Link
       to={href + "#comments"}
-      className={`nc-PostCardCommentBtn relative items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-50 transition-colors dark:text-neutral-200 dark:bg-neutral-800 hover:bg-teal-50 dark:hover:bg-teal-100 hover:text-teal-600 dark:hover:text-teal-500 ${className} ${twFocusClass()}`}
+      className={`nc-PostCardCommentBtn relative items-center min-w-[68px] rounded-full text-neutral-100 bg-primary-6000 transition-colors dark:text-neutral-200 dark:bg-primary-6000 hover:bg-primary-50 dark:hover:bg-primary-700  ${className} ${twFocusClass()}`}
       title="Comments"
       data-nc-id="PostCardCommentBtn"
     >
@@ -49,7 +49,7 @@ const PostCardCommentBtn: FC<PostCardCommentBtnProps> = ({
         ></path>
       </svg>
 
-      <span className="ml-1 text-neutral-900 dark:text-neutral-200">
+      <span className="ml-1 text-neutral-100 dark:text-neutral-200">
         {commentCount}
       </span>
     </Link>

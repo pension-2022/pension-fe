@@ -39,7 +39,7 @@ import PageSingleTemp4Sidebar from "containers/PageSingle/PageSingleTemp4Sidebar
 import MediaRunningContainer from "containers/MediaRunningContainer/MediaRunningContainer";
 
 export const pages: Page[] = [
-  { path: "/", exact: true, component: PageHome },
+  { path: "/", exact: true, component: PageHomeDemo5 },
   { path: "/#", exact: true, component: PageHome },
   //
   { path: "/home-header-style2", exact: true, component: PageHome },

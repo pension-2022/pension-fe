@@ -16,13 +16,13 @@ const CommentCardLikeReply: FC<CommentCardLikeReplyProps> = ({
   likeCount,
   isLiked,
   commentId,
-  onClickLike = () => {},
-  onClickReply = () => {},
+  onClickLike = () => { },
+  onClickReply = () => { },
 }) => {
   const renderActionBtns = () => {
     return (
       <>
-        <button
+        {/* <button
           className={`min-w-[68px] flex items-center rounded-full leading-none px-3 h-8 text-xs ${twFocusClass()} ${
             isLiked
               ? "text-rose-600 bg-rose-50"
@@ -56,9 +56,9 @@ const CommentCardLikeReply: FC<CommentCardLikeReplyProps> = ({
           >
             {convertNumbThousand(likeCount)}
           </span>
-        </button>
+        </button> */}
         <button
-          className={`flex items-center min-w-[68px] rounded-full text-neutral-6000 bg-neutral-100 dark:text-neutral-200 dark:bg-neutral-800 px-3 h-8 hover:bg-teal-50 hover:text-teal-600 dark:hover:text-teal-500 ${twFocusClass()} `}
+          className={`flex items-center min-w-[68px] rounded-full text-neutral-100 bg-primary-6000 dark:text-neutral-200 dark:bg-primary-6000 px-3 h-8 hover:bg-primary-50 hover:text-neutral-100 dark:hover:text-neutral-100 ${twFocusClass()} `}
           title="Reply"
           onClick={() => onClickReply(commentId)}
         >
@@ -76,7 +76,7 @@ const CommentCardLikeReply: FC<CommentCardLikeReplyProps> = ({
               d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"
             />
           </svg>
-          <span className="text-xs leading-none text-neutral-900 dark:text-neutral-200">
+          <span className="text-xs leading-none text-neutral-100 dark:text-neutral-200">
             Reply
           </span>
         </button>

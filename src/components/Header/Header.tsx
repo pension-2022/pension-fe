@@ -113,12 +113,12 @@ const Header: FC<HeaderProps> = ({ mainNavStyle = "style2", currentPage }) => {
         <div className="container">
           <div className="flex justify-end lg:justify-between">
             <div className="hidden lg:flex items-center mr-3">
-              <Avatar
+              {/* <Avatar
                 imgUrl={author.avatar}
                 userName={author.displayName}
                 sizeClass="w-8 h-8 text-lg"
                 radius="rounded-full"
-              />
+              /> */}
               <h3 className="ml-4 text-lg line-clamp-1 text-neutral-100">
                 {title}
               </h3>
@@ -131,11 +131,11 @@ const Header: FC<HeaderProps> = ({ mainNavStyle = "style2", currentPage }) => {
                 initBookmarked={bookmark.isBookmarked}
                 postId={id}
               />
-              <div className="border-l border-neutral-300 dark:border-neutral-700 h-6"></div>
-              <SocialsShare
+              {/* <div className="border-l border-neutral-300 dark:border-neutral-700 h-6"></div> */}
+              {/* <SocialsShare
                 className="flex space-x-2"
                 itemClass="w-8 h-8 bg-neutral-100 text-lg dark:bg-neutral-800 dark:text-neutral-300"
-              />
+              /> */}
             </div>
           </div>
         </div>

@@ -45,11 +45,11 @@ const SingleContent: FC<SingleContentProps> = ({ data }) => {
       </div>
 
       {/* TAGS */}
-      <div className="max-w-screen-md mx-auto flex flex-wrap">
+      {/* <div className="max-w-screen-md mx-auto flex flex-wrap">
         {tags.map((item) => (
           <Tag hideCount key={item.id} tag={item} className="mr-2 mb-2" />
         ))}
-      </div>
+      </div> */}
 
       {/* AUTHOR */}
       <div className="max-w-screen-md mx-auto border-b border-t border-neutral-100 dark:border-neutral-700"></div>
@@ -64,7 +64,7 @@ const SingleContent: FC<SingleContentProps> = ({ data }) => {
         className="max-w-screen-md mx-auto pt-5"
       >
         <h3 className="text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-          Responses ({commentCount})
+          Comments ({commentCount})
         </h3>
         <SingleCommentForm
           onClickSubmit={(id) => console.log(id)}

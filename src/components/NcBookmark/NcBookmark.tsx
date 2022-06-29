@@ -14,7 +14,7 @@ const NcBookmark: FC<NcBookmarkProps> = ({
   containerClassName = "h-8 w-8 bg-neutral-50 hover:bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700",
   isBookmarked,
   postId,
-  onClick = () => {},
+  onClick = () => { },
 }) => {
   return (
     <button
@@ -24,7 +24,7 @@ const NcBookmark: FC<NcBookmarkProps> = ({
       onClick={onClick}
       title="Save to reading list"
     >
-      <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <svg width="24" height="24" fill="" viewBox="0 0 24 24">
         <path
           stroke="currentColor"
           aria-hidden="true"

@@ -32,6 +32,18 @@ const PageSingleTemp3Sidebar: FC<PageSingleTemp3SidebarProps> = ({
     };
   }, []);
 
+  // useEffect(() => {
+  //   const $body = document.querySelector("body");
+  //   if ($body) {
+  //     $body.className = "theme-demo-5";
+  //   }
+  //   return () => {
+  //     if ($body) {
+  //       $body.className = "";
+  //     }
+  //   };
+  // }, []);
+
   return (
     <>
       <div

@@ -2,15 +2,27 @@ import ButtonPrimary from "components/Button/ButtonPrimary";
 import ButtonSecondary from "components/Button/ButtonSecondary";
 import Input from "components/Input/Input";
 import Logo from "components/Logo/Logo";
+import { LogoDPensiOn } from "components/Logo/LogoSvg";
 import MenuBar from "components/MenuBar/MenuBar";
 import Navigation from "components/Navigation/Navigation";
 import DarkModeContainer from "containers/DarkModeContainer/DarkModeContainer";
 import { NAVIGATION_SHORT_DEMO } from "data/navigation";
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 
 export interface MainNav2Props { }
 
 const MainNav2: FC<MainNav2Props> = () => {
+  useEffect(() => {
+    const $body = document.querySelector("body");
+    if ($body) {
+      $body.className = "theme-demo-5";
+    }
+    return () => {
+      if ($body) {
+        $body.className = "";
+      }
+    };
+  }, []);
   return (
     <div
       className={`nc-MainNav nc-MainNav2 relative z-10 ${"notOnTop backdrop-filter "}`}
